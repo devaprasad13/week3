@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <style>
+        *
+        {
+          border: none;
+        }
+        #tableBody
+        {
+            background-color: white;
+        }
+        #table
+        {
+            font-size: bold;
+        }
+     </style>
+        
+
+    <title>Welcome</title>
+</head>
+
+<body style="background-color: #3C9FBB">
+    <nav class="navbar navbar-expand-lg" style="background-color: black;">
+        <a class="navbar-brand" href="#" style="color: blueviolet; font-weight: bold;">LIBBO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="hello.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        
+        </div>
+    </nav>
+
+    <div id="message"></div>
+
+
+    <div class="container my-3" style="color: black; font-weight: bold;">
+  <h1>WELCOME TO PERSONAL LIBRARY</h1>
+        <hr>
+        <form id="libraryForm">
+            <div class="form-group row">
+                <label for="bookName" class="col-sm-2 col-form-label" style="font-weight: bold;" >Title</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="bookName" placeholder="Book Name" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Author" class="col-sm-2 col-form-label" style="font-weight: bold;">Author</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="author" placeholder="Author" required>
+                </div>
+            </div>
+            <fieldset class="form-group" >
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0" style="font-weight: bold;">Type</legend>
+                    <div class="col-sm-10" style="color: black; font-weight: bold;">
+                        <div class="form-check" >
+                            <input class="form-check-input" type="radio" name="type" id="fiction" value="fiction"
+                                checked>
+                            <label class="form-check-label" for="fiction">
+                                General knowledge
+                            </label>
+                        </div>
+                        <div class="form-check" >
+                            <input class="form-check-input" type="radio" name="type" id="programming"
+                                value="programming">
+                            <label class="form-check-label" for="programming">
+                                Comics
+                            </label>
+                        </div>
+                        <div class="form-check disabled" >
+                            <input class="form-check-input" type="radio" name="type" id="cooking" value="cooking">
+                            <label class="form-check-label" for="cooking">
+                               Novel
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" style="background-color: black; color:wheat; border-radius: 5px;">Add Book</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="table">
+            <h1>Your BOOKS</h1>
+
+            <table class="table table-striped" style="color: black; font-weight: bold;">
+                <thead>
+                    <tr >
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Type</th>
+                    </tr>
+                </thead>
+                <tbody id='tableBody'></tbody>
+
+            </table>
+           
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!--  then Bootstrap JS -->
+    <!-- <script src="index.js"></script> -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        <script src="projec.js"></script>
+
+        
+</body>
+
+</html>

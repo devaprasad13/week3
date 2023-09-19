@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+     padding: 0;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     text-decoration: none;
+}
+body
+{
+    background-image: url("https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?cs=srgb&dl=pexels-rafael-cosquiere-2041540.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+
+}
+.content
+{
+    width: 60%;
+    margin: 160px auto 10;
+    text-align: center;
+    color: white;
+    
+}
+.content h1{
+    font-size: 60px;
+    color:white;
+}
+.content h3{
+    width: 80%;
+    margin: 20px auto 100px;
+    font-weight: 100;
+    line-height:25px;
+    color: aquamarine;
+}
+.content h5{
+    width: 100%;
+    margin: 10px auto 10px;
+    font-weight: bold;
+    line-height: 20px;
+    color:cyan;
+}
+a
+{
+    width: 200px;
+    padding: 10px 30px;
+    text-align: center;
+    border: none;
+
+    border-radius: 6px ;
+    background: whitesmoke;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: cornflowerblue;
+
+}
+
+button:hover
+{
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
